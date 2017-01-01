@@ -8,7 +8,7 @@
 /* the work of any other person or entity.                                  */
 /****************************************************************************/
 /* The following file contains all of the function prototypes, constants and*/
-/* libraries needed for the program ./memChildShare.out to execute.			*/
+/* libraries needed for the program ./memChildShare.out to execute.			    */
 /****************************************************************************/
 
 #include <stdio.h>
