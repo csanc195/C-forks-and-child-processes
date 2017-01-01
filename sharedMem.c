@@ -16,25 +16,25 @@
 /* taken place. The parent process waits until all child processes are done */
 /* to detach and delete the shared memory, it then terminates.              */
 /****************************************************************************/
-/*            			Instructions/How to use:                            */
-/* First download the files sharedMem.c, master.c, master.h and the 		*/
-/* makefile to the same directory and follow the following steps:			*/
-/* 																			*/
-/* 1-)	To Build:															*/
-/* 		To compile and build this specific program just enter in 			*/
-/*		the terminal:													   	*/
-/*    		make build                                                      */
-/* 																			*/
-/* 		or enter:															*/
-/* 			gcc -Wall -w sharedMem.c master.c -o memChildShare.out			*/
-/* 																			*/
-/* 2-)	To execute: 														*/
-/* 		After building with make, enter the following in 					*/
-/* 		the terminal: 														*/
-/* 		./memChildShare.out x1 x2 x3 ... xN		      	                    */
-/* 																			*/
-/* 		Notice N is a number from 1 to 7 inclusive and x is an integer 		*/
-/* 		from 0 to 9			                                                */
+/*            			Instructions/How to use:                    */
+/* First download the files sharedMem.c, master.c, master.h and the 	    */
+/* makefile to the same directory and follow the following steps:	    */
+/* 	        							    */
+/* 1-)	To Build:	 						    */
+/* 		To compile and build this specific program just enter in    */
+/*		the terminal:		  			   	    */
+/*    		make build                                                  */
+/* 									    */
+/* 		or enter:						    */
+/* 		     gcc -Wall -w sharedMem.c master.c -o memChildShare.out */
+/* 									    */
+/* 2-)	To execute: 							    */
+/* 		After building with make, enter the following in 	    */
+/* 		the terminal: 						    */
+/* 		./memChildShare.out x1 x2 x3 ... xN		      	    */
+/* 									    */
+/* 		Notice N is a number from 1 to 7 inclusive and x is an integer*/
+/* 		from 0 to 9			                            */
 /****************************************************************************/
 /*                      References:                                         */
 /* The program uses the POSIX standars, Portable Operating System Interface */
@@ -42,11 +42,11 @@
 /* functions that controll forks, the creation and manipulation of shared   */
 /* memory, functions that allow to verify and assert process ids, and       */
 /* functions that allow to wait for forked processes to finish.             */
-/* Some of the functions used in this program: 								*/
-/* For functions such as fflush(), getpid(), getppid(), fork(), wait(),		*/
-/* create, atach, detach and delete shared memories the following soruce 	*/
-/* was used as reference: 													*/
-/* "Unix Multiprocess Programming"											*/ 														
+/* Some of the functions used in this program: 				    */
+/* For functions such as fflush(), getpid(), getppid(), fork(), wait(),	    */
+/* create, atach, detach and delete shared memories the following soruce    */
+/* was used as reference: 			   			    */
+/* "Unix Multiprocess Programming"					    */ 														
 /* http://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/process.html          */
 /****************************************************************************/
 #include "master.h"
