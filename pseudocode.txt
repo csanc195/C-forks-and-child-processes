@@ -1,0 +1,44 @@
+
+
+main program(int charArraySize, char arrayIn[]){
+
+
+	if(valdidateImputArray(arrayIn)){
+		int *intPointer;
+		int memoryID
+		int length = charArraySize - 1;
+
+		/* Create shared memory */
+		memory ID = createSharedMemmoryForIntArray(lenght);
+
+		/* Atach the memory to the current program */
+		intPointer = atachSharedMemory(momoryID);
+
+		/* Fill memory with ints */
+		fillSharedMemmory(arrayIn, intPointer, length);
+
+		/* Fork (length) times and execute all child processes*/
+		forkNChildren(length, intPointer);
+
+		/* Detach shared memory*/
+		shmdt(intPointer);
+
+		/* Delete shared memory*/
+		shmctl(...);	
+	}
+
+	END.
+}
+
+
+
+bool valdidateImputArray(char arrayIn[], int charArraySize){
+	if(charArraySize > 7 OR charArraySize < 1 ){
+		return false;
+	} else {
+		if(Any element in arrayIn[] is less than zero or greater than 7){
+			return false
+		}
+	}
+	return true;
+}
